@@ -67,8 +67,7 @@ fun CategoryScreen(
     // Determine grid columns based on screen width
     val gridColumns = when {
         screenSize.width > 840.dp -> GridCells.Fixed(4)  // Expanded
-        screenSize.width > 600.dp -> GridCells.Fixed(3)  // Medium
-        else -> GridCells.Fixed(2)  // Compact
+        else -> GridCells.Fixed(2)
     }
     
     Scaffold(

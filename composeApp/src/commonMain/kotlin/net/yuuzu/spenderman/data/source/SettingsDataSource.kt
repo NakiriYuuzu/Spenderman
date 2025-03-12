@@ -33,7 +33,7 @@ class SettingsDataSource(private val settings: Settings) {
         }
     }
     
-    suspend fun updateSettings(appSettings: AppSettings): Boolean {
+    fun updateSettings(appSettings: AppSettings): Boolean {
         return try {
             saveSettings(appSettings)
             true
